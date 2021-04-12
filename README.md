@@ -1,8 +1,8 @@
-# Boilerplate React With Redux
+# Boilerplate React with Redux and Firebase
 
 ## Setup
 
-- Click on ["Use this template"](https://github.com/YashTotale/boilerplate-react-with-redux/generate)
+- Click on ["Use this template"](https://github.com/YashTotale/boilerplate-react-with-redux-and-firebase/generate)
 - Create a new repository
 - Clone the repository you created to your local machine
 - Run `npm install`

@@ -11,12 +11,12 @@ replacer() {
 
   CURRENT_NAME="Yash Totale"
   CURRENT_OWNER="YashTotale"
-  CURRENT_REPO="boilerplate-react-with-redux"
+  CURRENT_REPO="boilerplate-react-with-redux-and-firebase"
 
   REPLACE_1="s/$CURRENT_NAME/$REPO_OWNER/g"
   REPLACE_2="s/$CURRENT_OWNER/$REPO_OWNER/g"
   REPLACE_3="s/$CURRENT_REPO/$REPO_NAME/g"
-  REPLACE_4="s/Boilerplate React with Redux/${REPO_NAME//[-]/ }/g"
+  REPLACE_4="s/Boilerplate React with Redux and Firebase/${REPO_NAME//[-]/ }/g"
 
   if [[ "$OSTYPE" == "darwin"* ]]; then
     sed "-i" "" "-e" "$REPLACE_1" "$1"

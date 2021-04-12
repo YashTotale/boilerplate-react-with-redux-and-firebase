@@ -1,4 +1,4 @@
-# GitHub Actions Workflow responsible for cleaning up the Boilerplate React with Redux repository from
+# GitHub Actions Workflow responsible for cleaning up the Boilerplate React with Redux and Firebase repository from
 # the template-specific files and configurations. This workflow is supposed to be triggered automatically
 # when a new template-based repository has been created.
 
@@ -12,7 +12,7 @@ jobs:
   template-cleanup:
     name: Template Cleanup
     runs-on: ubuntu-latest
-    if: github.event.repository.name != 'boilerplate-react-with-redux'
+    if: github.event.repository.name != 'boilerplate-react-with-redux-and-firebase'
     steps:
       # Check out current repository
       - name: Fetch Sources

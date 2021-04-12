@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-react-with-redux",
+  "name": "boilerplate-react-with-redux-and-firebase",
   "private": true,
   "scripts": {
     "build": "react-scripts build",

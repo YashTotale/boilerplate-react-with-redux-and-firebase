@@ -21,6 +21,7 @@
 
 ## Usage
 
+- **Add your Firebase Config to `src/Utils/config.ts`**
 - Run `npm start`
 - Open localhost:3000 and see your website
 

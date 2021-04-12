@@ -49,10 +49,11 @@ import storage from "redux-persist/lib/storage";
 
 // Reducer Imports
 import { displayReducer, DisplayState } from "./Redux/display.slice";
-// import { popupReducer, PopupState } from "./Redux/popup.slice";
+import { popupReducer, PopupState } from "./Redux/popup.slice";
 
 interface State {
   display: DisplayState;
+  popup: PopupState;
   firebase: FirebaseReducer.Reducer<
     Record<string, unknown>,
     Record<string, unknown>
@@ -67,6 +68,7 @@ const rootPersistConfig = {
 
 const reducers = combineReducers<State>({
   display: displayReducer,
+  popup: popupReducer,
   firebase: firebaseReducer,
   firestore: firestoreReducer,
 });

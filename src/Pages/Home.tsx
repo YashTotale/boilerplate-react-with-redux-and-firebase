@@ -1,6 +1,5 @@
 //React Imports
 import React, { FC } from "react";
-import Navbar from "../Components/Navbar";
 
 //Material UI Imports
 import { makeStyles, Theme, Typography } from "@material-ui/core";
@@ -14,7 +13,6 @@ const Home: FC = () => {
 
   return (
     <div className={classes.home}>
-      <Navbar />
       <Typography variant="h1" align="center">
         Boilerplate React with Redux and Firebase
       </Typography>

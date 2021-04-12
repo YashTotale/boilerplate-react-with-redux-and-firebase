@@ -1,31 +1,43 @@
 //React Imports
 import { hot } from "react-hot-loader";
 import React, { FC } from "react";
+import { Switch, Route } from "react-router-dom";
+
+// Pages
 import Home from "./Pages/Home";
 
-//Material UI Imports
-import Theme from "./Theme";
+// Components
+import Popup from "./Components/Popup";
+import Navbar from "./Components/Navbar";
 
-//Router Imports
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+// Material UI Imports
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles((theme) => ({
+  app: {},
+}));
 
 const App: FC = () => {
   return (
-    <Router>
-      <Theme>
-        <Routes />
-      </Theme>
-    </Router>
+    <>
+      <Popup />
+      <Navbar />
+      <Routes />
+    </>
   );
 };
 
 const Routes: FC = () => {
+  const classes = useStyles();
+
   return (
-    <Switch>
-      <Route path="/">
-        <Home />
-      </Route>
-    </Switch>
+    <div className={classes.app}>
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </div>
   );
 };
 

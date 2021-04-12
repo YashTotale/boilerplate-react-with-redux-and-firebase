@@ -13,6 +13,8 @@ import {
   CssBaseline,
 } from "@material-ui/core";
 
+export const alternativeFont = "Arial, sans-serif";
+
 const Theme: FC = ({ children }) => {
   const dispatch = useDispatch();
 
@@ -23,6 +25,19 @@ const Theme: FC = ({ children }) => {
   }
 
   const theme = createMuiTheme({
+    overrides: {
+      MuiTooltip: {
+        arrow: {
+          color: "rgb(0, 0, 0, 0.76)",
+        },
+        tooltip: {
+          fontFamily: alternativeFont,
+          fontWeight: 600,
+          fontSize: "0.72rem",
+          backgroundColor: "rgb(0, 0, 0, 0.76)",
+        },
+      },
+    },
     palette: {
       type: isDarkMode ? "dark" : "light",
     },
